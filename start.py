@@ -7,7 +7,7 @@ import importlib
 
 
 def _import(name, globals=None, locals=None, fromlist=None, level=0, __import__=__import__):
-    """A hack to to make names of imported modules to be available in the parent package before
+    """A hack to make names of imported modules to be available in the parent package before
     they are fully imported. If a module is present in sys.modules event if it's not fully
     imported, it should not be a problem.
     I.e. ``from package import module1, module2`` will create variables ``package.module1`` and
